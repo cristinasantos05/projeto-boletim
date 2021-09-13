@@ -2,19 +2,23 @@
 python -m pip install --upgrade pip
 python -m venv .venv
 
-##### ativar ambiente venv
+### ativar ambiente venv no PowerShell Visual Studio Code
 .venv\Scripts\Activate.ps1
+
+###### em caso de erro na ativação
+rodar o comando:
+PS C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # formas de inicializar o ambiente venv
 POSIX
     bash/zsh
-        $ source <venv>/bin/activate
+        $source<venv>/bin/activate
     fish
-        $ source <venv>/bin/activate.fish
+        $source<venv>/bin/activate.fish
     csh/tcsh
-        $ source <venv>/bin/activate.csh
+        $source<venv>/bin/activate.csh
     PowerShell Core
-        $ <venv>/bin/Activate.ps1
+        $<venv>/bin/Activate.ps1
 Windows
     cmd.exe
         C:\> <venv>\Scripts\activate.bat
@@ -23,11 +27,7 @@ Windows
 
 # dentro do ambiente
 python -m pip install --upgrade pip
-pip install flask
-
-PowerShell
-    $env:FLASK_ENV = "development"
-    $env:FLASK_APP = "app"
+pip install -r requirements.txt
 
 # rodar o Flask
 Flask run
