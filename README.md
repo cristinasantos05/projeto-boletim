@@ -6,10 +6,13 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 
 ###### em caso de erro na ativação
+```
 rodar o comando:
 PS C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
 # formas de inicializar o ambiente venv
+```
 POSIX
     bash/zsh
         $source<venv>/bin/activate
@@ -24,6 +27,7 @@ Windows
         C:\> <venv>\Scripts\activate.bat
     PowerShell
         PS C:\> <venv>\Scripts\Activate.ps1
+```
 
 # dentro do ambiente
 python -m pip install --upgrade pip
