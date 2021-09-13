@@ -4,12 +4,12 @@ python -m pip install --upgrade pip
 python -m venv .venv
 ```
 
-### ativar ambiente venv no PowerShell Visual Studio Code
+# ativar ambiente venv no PowerShell Visual Studio Code
 ```
 .venv\Scripts\Activate.ps1
 ```
 
-###### em caso de erro na ativação
+# em caso de erro na ativação
 ```
 PS C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
