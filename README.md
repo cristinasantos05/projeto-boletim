@@ -1,13 +1,16 @@
 # inicialization
+```
 python -m pip install --upgrade pip
 python -m venv .venv
+```
 
 ### ativar ambiente venv no PowerShell Visual Studio Code
+```
 .venv\Scripts\Activate.ps1
+```
 
 ###### em caso de erro na ativação
 ```
-rodar o comando:
 PS C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
@@ -30,8 +33,12 @@ Windows
 ```
 
 # dentro do ambiente
+```
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+```
 
 # rodar o Flask
-Flask run
+```
+flask run
+```
